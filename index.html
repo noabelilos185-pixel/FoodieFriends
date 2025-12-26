@@ -10,7 +10,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#" title="FoodieFriends logo">
+      <a class="logo" href="#">
         <img src="logo.png" alt="FoodieFriends logo">
       </a>
 
@@ -36,11 +36,13 @@
             Explore a clean social feed of cafés and restaurants.
             Save places, follow friends, and get weekly picks.
           </p>
+
           <div class="hero-actions">
             <a class="btn primary" href="#feed">Explore Feed</a>
             <a class="btn ghost" href="#" title="Not implemented yet">Subscribe</a>
           </div>
-          <ul class="hero-bullets" aria-label="Key benefits">
+
+          <ul class="hero-bullets">
             <li>Clean, mobile-first UI</li>
             <li>Save & revisit your favorites</li>
             <li>Find friends with similar taste</li>
@@ -64,166 +66,46 @@
 
         <div class="feed-grid">
 
-          <!-- POST 1 -->
+          <!-- POST -->
           <article class="post-card">
             <div class="user-info">
-              <div class="user-avatar" style="background-color: #ffadad;">N</div>
+              <div class="user-avatar" style="background:#ffadad;">N</div>
               <span class="user-name">Noa</span>
             </div>
 
-            <img class="post-img" src="post1.jpg" alt="Mediterranean starters and bread">
+            <img class="post-img" src="post1.jpg" alt="Mediterranean food">
 
             <div class="post-body">
-              <header class="post-head">
-                <h3>Basta</h3>
-                <p class="meta">Tel Aviv • 2 days ago</p>
-              </header>
+              <h3>Basta</h3>
+              <p class="meta">Tel Aviv • 2 days ago</p>
 
               <p class="post-text">
-                A perfect table to start the evening — fresh tomatoes with creamy cheese,
-                crispy calamari on yogurt, and warm bread on the side.
-                Simple ingredients, done right.
+                A perfect table to start the evening — fresh tomatoes,
+                creamy cheese, crispy calamari, and warm bread.
               </p>
 
               <ul class="tags">
                 <li>#sharing</li>
                 <li>#mediterranean</li>
                 <li>#fresh</li>
-                <li>#starters</li>
-                <li>#telaviv</li>
               </ul>
 
               <div class="post-actions">
-                <input class="toggle" type="checkbox" id="like1">
-                <label class="icon-btn btn-like" for="like1" aria-label="Like">♡</label>
-
-                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
-                  💬
-                </button>
-
-
-                <input class="toggle" type="checkbox" id="save1">
-                <label class="icon-btn btn-save" for="save1" aria-label="Save">★</label>
+                <button class="icon-btn" title="Not implemented yet">♡</button>
+                <button class="icon-btn" title="Not implemented yet">💬</button>
+                <button class="icon-btn" title="Not implemented yet">★</button>
               </div>
 
-              <div class="comments-section" id="comments1">
+              <div class="comments-section">
                 <div class="comment">
-                  <div class="comment-avatar" style="background-color: #a0c4ff;">G</div>
+                  <div class="comment-avatar" style="background:#a0c4ff;">G</div>
                   <div class="comment-content">
-                    <span class="comment-user">Galit</span>
-                    <span class="comment-text">Looks amazing!</span>
+                    <strong>Galit</strong>
+                    <span>Looks amazing!</span>
                   </div>
                 </div>
-                <input type="text" placeholder="Add a comment..." class="comment-input">
-              </div>
-            </div>
-          </article>
 
-          <!-- POST 2 -->
-          <article class="post-card">
-            <div class="user-info">
-              <div class="user-avatar" style="background-color: #ffd6a5;">H</div>
-              <span class="user-name">Hili</span>
-            </div>
-
-            <img class="post-img" src="post2.jpg" alt="Strawberries and cream dessert">
-
-            <div class="post-body">
-              <header class="post-head">
-                <h3>Cafe Italia</h3>
-                <p class="meta">Tel Aviv • 1 week ago</p>
-              </header>
-
-              <p class="post-text">
-                Light, fresh, and not too sweet.
-                Strawberries with soft cream and powdered sugar —
-                the kind of dessert you order even when you’re “too full”.
-              </p>
-
-              <ul class="tags">
-                <li>#dessert</li>
-                <li>#strawberries</li>
-                <li>#sweet</li>
-                <li>#light</li>
-                <li>#telaviv</li>
-              </ul>
-
-              <div class="post-actions">
-                <input class="toggle" type="checkbox" id="like2">
-                <label class="icon-btn btn-like" for="like2" aria-label="Like">♡</label>
-
-                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
-                  💬
-                </button>
-
-
-                <input class="toggle" type="checkbox" id="save2">
-                <label class="icon-btn btn-save" for="save2" aria-label="Save">★</label>
-              </div>
-
-              <div class="comments-section" id="comments2">
-                <div class="comment">
-                  <div class="comment-avatar" style="background-color: #bdb2ff;">Y</div>
-                  <div class="comment-content">
-                    <span class="comment-user">Yoni</span>
-                    <span class="comment-text">Need to try this asap.</span>
-                  </div>
-                </div>
-                <input type="text" placeholder="Add a comment..." class="comment-input">
-              </div>
-            </div>
-          </article>
-
-          <!-- POST 3 -->
-          <article class="post-card">
-            <div class="user-info">
-              <div class="user-avatar" style="background-color: #fdffb6; color:#555;">T</div>
-              <span class="user-name">Tomer</span>
-            </div>
-
-            <img class="post-img" src="post3.jpg" alt="Asian lettuce wrap">
-
-            <div class="post-body">
-              <header class="post-head">
-                <h3>Thai House</h3>
-                <p class="meta">Tel Aviv • 3 weeks ago</p>
-              </header>
-
-              <p class="post-text">
-                One bite and you get everything — crunch, heat, herbs, and sauce.
-                Loved the lettuce wrap concept: light, flavorful, and fun to eat.
-              </p>
-
-              <ul class="tags">
-                <li>#asian</li>
-                <li>#lettucewrap</li>
-                <li>#streetfood</li>
-                <li>#boldflavors</li>
-                <li>#telaviv</li>
-              </ul>
-
-              <div class="post-actions">
-                <input class="toggle" type="checkbox" id="like3">
-                <label class="icon-btn btn-like" for="like3" aria-label="Like">♡</label>
-
-                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
-                  💬
-                </button>
-
-
-                <input class="toggle" type="checkbox" id="save3">
-                <label class="icon-btn btn-save" for="save3" aria-label="Save">★</label>
-              </div>
-
-              <div class="comments-section" id="comments3">
-                <div class="comment">
-                  <div class="comment-avatar" style="background-color: #ffc6ff;">R</div>
-                  <div class="comment-content">
-                    <span class="comment-user">Ronit</span>
-                    <span class="comment-text">Spicy?</span>
-                  </div>
-                </div>
-                <input type="text" placeholder="Add a comment..." class="comment-input">
+                <input type="text" class="comment-input" placeholder="Add a comment...">
               </div>
             </div>
           </article>
@@ -248,7 +130,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2025 FoodieFriends — Web Programming course project</p>
-      <nav class="footer-nav" aria-label="Footer links">
+      <nav class="footer-nav">
         <a href="#" title="Not implemented yet">About</a>
         <a href="#" title="Not implemented yet">Terms</a>
         <a href="#" title="Not implemented yet">Contact</a>
@@ -258,4 +140,3 @@
 
 </body>
 </html>
-
