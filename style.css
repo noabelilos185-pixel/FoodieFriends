@@ -280,9 +280,6 @@ body {
 }
 
 /* Hide checkboxes but keep basic checked styling */
-.toggle {
-  display: none;
-}
 
 .toggle:checked + .btn-like {
   color: #ef4444;
@@ -299,10 +296,6 @@ body {
   border-top: 1px solid #e7dfd3;
   padding-top: 10px;
   margin-top: 10px;
-}
-
-.hidden {
-  display: none;
 }
 
 .comment {
@@ -422,3 +415,4 @@ body {
     width: 100%;
   }
 }
+
