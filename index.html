@@ -97,14 +97,16 @@
                 <input class="toggle" type="checkbox" id="like1">
                 <label class="icon-btn btn-like" for="like1" aria-label="Like">♡</label>
 
-                <button class="icon-btn btn-comment" type="button"
-                  onclick="toggleComments('comments1')" aria-label="Comment">💬</button>
+                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
+                  💬
+                </button>
+
 
                 <input class="toggle" type="checkbox" id="save1">
                 <label class="icon-btn btn-save" for="save1" aria-label="Save">★</label>
               </div>
 
-              <div class="comments-section hidden" id="comments1">
+              <div class="comments-section" id="comments1">
                 <div class="comment">
                   <div class="comment-avatar" style="background-color: #a0c4ff;">G</div>
                   <div class="comment-content">
@@ -150,14 +152,16 @@
                 <input class="toggle" type="checkbox" id="like2">
                 <label class="icon-btn btn-like" for="like2" aria-label="Like">♡</label>
 
-                <button class="icon-btn btn-comment" type="button"
-                  onclick="toggleComments('comments2')" aria-label="Comment">💬</button>
+                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
+                  💬
+                </button>
+
 
                 <input class="toggle" type="checkbox" id="save2">
                 <label class="icon-btn btn-save" for="save2" aria-label="Save">★</label>
               </div>
 
-              <div class="comments-section hidden" id="comments2">
+              <div class="comments-section" id="comments2">
                 <div class="comment">
                   <div class="comment-avatar" style="background-color: #bdb2ff;">Y</div>
                   <div class="comment-content">
@@ -202,14 +206,16 @@
                 <input class="toggle" type="checkbox" id="like3">
                 <label class="icon-btn btn-like" for="like3" aria-label="Like">♡</label>
 
-                <button class="icon-btn btn-comment" type="button"
-                  onclick="toggleComments('comments3')" aria-label="Comment">💬</button>
+                <button class="icon-btn btn-comment" type="button" aria-label="Comment">
+                  💬
+                </button>
+
 
                 <input class="toggle" type="checkbox" id="save3">
                 <label class="icon-btn btn-save" for="save3" aria-label="Save">★</label>
               </div>
 
-              <div class="comments-section hidden" id="comments3">
+              <div class="comments-section" id="comments3">
                 <div class="comment">
                   <div class="comment-avatar" style="background-color: #ffc6ff;">R</div>
                   <div class="comment-content">
@@ -250,16 +256,6 @@
     </div>
   </footer>
 
-  <script>
-    function toggleComments(id) {
-      var box = document.getElementById(id);
-
-      if (box.className.indexOf("hidden") !== -1) {
-        box.className = box.className.replace("hidden", "").trim();
-      } else {
-        box.className = (box.className + " hidden").trim();
-      }
-    }
-  </script>
 </body>
 </html>
+
